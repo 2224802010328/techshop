@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+header{
+    z-index: 16;
+    position: fixed;
+    width: 100%;
+    height:9vh;
+    display: flex;
+    background-image: url(/images/Trang/bgbanner2.jpg);
+    background-size: cover;
+}
+header img{
+    float:left;
+    height: 30px;
+    margin: 20px 400px 20px 20px;
+}
+.menu{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+}
+.menu li a{
+    font-size: 20px;
+    width:150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px;
+    padding:12px 0;
+    color:#fff;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.menu li span{
+    width:100%;
+    height:100%;
+    position: absolute;
+    border-radius: 20px;
+    top:0;
+    left:0;
+    z-index:-1;
+    cursor:pointer;
+    transition: 1s ;
+    opacity: 0;
+    background: linear-gradient(to bottom, rgba(245, 71, 71, 0.477), rgba(105, 92, 252, 0.499));
+}
+.menu li:nth-child(6) a{
+    width:50px;
+}
+.menu li:nth-child(6):hover{
+    scale: 1.2;
+}
+.menu li:nth-child(5){
+background-color: #fff;
+width: 200px;
+border-radius: 3px
+}
+.menu li:nth-child(5) a{
+    display:flex;
+}
+.menu li:nth-child(5) a input{
+    float:left;
+    border: none;
+}
+.menu li:nth-child(5) a i{
+    float:right;
+    padding:3px;
+    color: cyan;
+    cursor: pointer;
+}
+
+.menu li:nth-child(4) span{
+    opacity: 1;
+}
+.menu li:hover span{
+    animation: vip 3s linear infinite;
+    opacity: 1;
+}
+@keyframes vip{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+section{
+    background-image: url(/images/Trang/lienhe.png);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.lienhe{
+    height: 70vh;
+    width: 80vw;
+    margin: 15vh 10vw;
+    background-color: #fff;
+    opacity: 0.9;
+    filter: blur(1);
+    position: absolute;
+    display: flex;
+    border-radius: 20px;
+}
+.lienhe div,
+.lienhe form{
+    width: 30vw;
+    height: 60vh;
+    margin: 5vh 5vw;
+}
+.lienhe div H2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.lienhe div h3,
+.lienhe div i{
+    font-size: 40px;
+    color: cyan;
+}
+.lienhe div h4{
+    font-weight: bold;
+    text-align: justify;
+}
+.lienhe form{
+    padding:50px 0;
+    display:flex;
+    flex-direction: column;
+}
+.lienhe form input{
+    width: 30vw;
+    border-radius: 5px;
+    border: gray solid 1px;
+    margin:5px 0;
+    height: 40px;
+    padding: 10px;
+}
+.lienhe form textarea{
+    width: 30vw;
+    border-radius: 5px;
+    border: gray solid 1px;
+    margin:5px 0;
+    height: 140px;
+    padding: 10px;
+}
+.lienhe form input[type=submit]{
+    color:rgb(92, 84, 237);
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    margin-left: 360px;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.lienhe form input[type=submit]:hover{
+    color: #f62955;
+    opacity: 1;
+}
+footer{
+    background-image: url(/images/Trang/bgbanner.jpg);
+    background-size: cover;
+    color:#fff
+}
+footer div{
+    display: flex;
+    width:90%;
+    margin: 0 auto;
+    padding: 30px;
+}
+footer div ul{
+    list-style: none;
+    margin: 0 10px;
+}
+footer div img{
+    height: 60px;
+    margin-right:60px;
+    margin-top: 20px;
+}
+.title-footer{
+    font-weight: bold;
+    font-size: 20px;
+}
+footer ul li{
+    margin: 13px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #f62955;
+    transition: 0.5s;
+}
+footer ul li a:hover{
+    text-decoration: none;
+    color: #1bb5f7;
+}
+footer .last{
+    width: 100%;
+}
+footer .last p{
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+#top-up {
+    font-size: 4em;
+    cursor: pointer;
+    position: fixed;
+    z-index: 10;
+    color:#dec2f9;
+    bottom: 0px;
+    left:1400px;
+    display: none;
+    transition: 0.5s;
+    }
+    #top-up:hover {
+    color: rebeccapurple;
+    }

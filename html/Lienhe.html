@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>techshop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/lienhe.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+  <div>
+    <img src="/images/Trang/logo.png">
+  </div>
+  <div>
+    <ul class="menu">
+        <li><a href="/html/Trangchu.html">Trang chủ<span></span></a></li>
+        <li><a href="/html/Sanpham.html">Sản phẩm<span></span></a></li>
+        <li><a href="/html/Gioithieu.html">Giới thiệu<span></span></a></li>
+        <li><a href="/html/Lienhe.html">Liên hệ<span></span></a></li>
+        <li>
+          <a>
+            <input type="text" placeholder="tìm kiếm" style="color:blueviolet;width:150px;">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </li>
+        <li><a href="/html/Dangnhap.html"><i class="fa-solid fa-user"></i><span></span></a></li>
+      </ul>
+  </div>
+</header>
+<p style="height: 6vh;margin: 0;"></p>
+<section>
+  <div class="lienhe">
+  <div>
+    <h3>Liên hệ</h3>
+    <i class="fa-solid fa-envelope-open-text"></i>
+    <h2>Hãy gửi vấn đề của bạn</h2>
+    <h4>Chúng tôi sẽ trả lời và giải quyết mọi thắc mắc của bạn. Sự hài lòng của bạn chính là động lực của Techshop.</h4>
+  </div>
+  <form action="#">
+    <fieldset>
+      <input type="text" required placeholder="Họ và tên*">
+      <input type="email" required placeholder="Gmail*">
+      <input type="tel" required placeholder="Số điện thoại*">
+      <textarea placeholder="Nội dung*"></textarea>
+      <input type="submit" value="Gửi đi">
+    </fieldset>
+  </form>
+  </div>
+</section>
+<footer>
+  <div>
+    <ul>
+      <li><img src="/images/Trang/logo.png"></li>
+    </ul>
+    <ul>
+      <li class="title-footer">Thời gian hoạt động</li>
+      <li>Trang web hoạt động 24/7</li>
+      <li>Ngày 15 trong tháng sẽ có cập nhật trang web từ 10h đến 10h10' sáng!</li>
+    </ul>
+    <ul>
+      <li class="title-footer">Thông tin liên hệ</li>
+      <li><i class="fa-solid fa-phone"></i> Hotline: 0868327***</li>
+      <li><i class="fa-solid fa-envelope"></i> Gmail: 2224802010328@student.tdmu.edu.vn</li>
+    </ul>
+    <ul>
+      <li class="title-footer">Thông tin khác</li>
+      <li><a href="Lienhe.html">Form liên hệ</a></li>
+      <li><a href="Gioithieu.html">Giới thiệu</a></li>
+    </ul>
+</div>
+<div class="last">
+  <p>2023 &copy bản quyền thuộc về 2 đứa code web trường đại học thủ dầu một</p>
+</div>
+</footer>
+<script>
+  var offset = 100;
+  var duration = 750;
+  $(function(){
+  $(window).scroll(function () {
+  if ($(this).scrollTop() > offset)
+  $('#top-up').fadeIn(duration);else
+  $('#top-up').fadeOut(duration);
+  });
+  $('#top-up').click(function () {
+  $('body,html').animate({scrollTop: 0}, duration);
+  });
+  });
+  </script>
+  <div title="Về đầu trang" id="top-up">
+    <i class="fa-solid fa-square-caret-up"></i></div>
+</body>
+</html>

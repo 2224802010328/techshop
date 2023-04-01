@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+header{
+    z-index: 16;
+    position: fixed;
+    width: 100%;
+    height:9vh;
+    display: flex;
+    background-image: url(/images/Trang/bgbanner2.jpg);
+    background-size: cover;
+}
+header img{
+    float:left;
+    height: 30px;
+    margin: 20px 400px 20px 20px;
+}
+.menu{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+}
+.menu li a{
+    font-size: 20px;
+    width:150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px;
+    padding:12px 0;
+    color:#fff;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.menu li span{
+    width:100%;
+    height:100%;
+    position: absolute;
+    border-radius: 20px;
+    top:0;
+    left:0;
+    z-index:-1;
+    cursor:pointer;
+    transition: 1s ;
+    opacity: 0;
+    background: linear-gradient(to bottom, rgba(245, 71, 71, 0.477), rgba(105, 92, 252, 0.499));
+}
+.menu li:nth-child(6) a{
+    width:50px;
+}
+.menu li:nth-child(6):hover{
+    scale: 1.2;
+}
+.menu li:nth-child(5){
+background-color: #fff;
+width: 200px;
+border-radius: 3px
+}
+.menu li:nth-child(5) a{
+    display:flex;
+}
+.menu li:nth-child(5) a input{
+    float:left;
+    border: none;
+}
+.menu li:nth-child(5) a i{
+    float:right;
+    padding:3px;
+    color: cyan;
+    cursor: pointer;
+}
+
+.menu li:nth-child(3) span{
+    opacity: 1;
+}
+.menu li:hover span{
+    animation: vip 3s linear infinite;
+    opacity: 1;
+}
+@keyframes vip{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.sec1{
+    width: 100%;
+    height: 70vh;
+    color:rgb(255, 255, 255);
+    background-image: url(/images/Trang/cucquang.png);
+    text-align: center;
+    background-size: cover;
+}
+.sec1 h2{
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
+    font-size:130px;
+    padding-top: 20vh;
+}
+.sec1 p{
+    font-size:20px;
+    font-style: italic;
+}
+.sec2{
+    width: 90vw;
+    height: 70vh;
+    margin: 0 auto;
+    background-size:cover;
+    position: relative; 
+}
+.sec2 .box{
+    height:30vh;
+    width: 30vw;
+    right:5vw;
+    top:20vh;
+    background-color: aliceblue;
+    position: absolute;
+    border-radius: 10px;
+    padding:40px;
+}
+.sec3{
+    width: 80vw;
+    height: 50vh;
+    margin: 0 auto;
+    background-size:cover;
+    position: relative; 
+}
+.sec3 .pic,
+.sec3 .text{
+    height:30vh;
+    width: 30vw;
+    top:15vh;
+    position: absolute;
+    border-radius: 10px;
+    padding:40px;
+}
+
+.sec3 .pic img{
+    width:30vw;
+    margin:6vh;
+}
+.text h4,
+.sec2 .box h4{
+    font-weight: lighter;
+    color: grey;
+    text-align: justify;
+    font-size: medium;
+}
+.sec3 .pic1{
+    background-image: url(/images/Trang/button.jpg);
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    background-size: cover;
+}
+.baohanh{
+    color:rgb(59, 68, 236);
+    margin:10vh auto;
+    width: 80vw;
+}
+.baohanh div p{
+    color:black;
+    font-size:30px;
+    margin:20px 10px
+}
+.baohanh ul{
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 80vw;
+}
+.baohanh ul li{
+    width: 40vw;
+    display: flex;
+    margin-bottom: 50PX;
+}
+.baohanh ul li i{
+    font-size: 5vw;
+}
+.baohanh ul li div{
+    margin-left: 5vw;
+    width:30vw;
+}
+.baohanh ul li div h4{
+    color: grey;
+}
+
+
+footer{
+    background-image: url(/images/Trang/bgbanner.jpg);
+    background-size: cover;
+    color:#fff
+}
+footer div{
+    display: flex;
+    width:90%;
+    margin: 0 auto;
+    padding: 30px;
+}
+footer div ul{
+    list-style: none;
+    margin: 0 10px;
+}
+footer div img{
+    height: 60px;
+    margin-right:60px;
+    margin-top: 20px;
+}
+.title-footer{
+    font-weight: bold;
+    font-size: 20px;
+}
+footer ul li{
+    margin: 13px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #f62955;
+    transition: 0.5s;
+}
+footer ul li a:hover{
+    text-decoration: none;
+    color: #1bb5f7;
+}
+footer .last{
+    width: 100%;
+}
+footer .last p{
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+#top-up {
+    font-size: 4em;
+    cursor: pointer;
+    position: fixed;
+    z-index: 10;
+    color:#dec2f9;
+    bottom: 0px;
+    left:1400px;
+    display: none;
+    transition: 0.5s;
+    }
+    #top-up:hover {
+    color: rebeccapurple;
+    }

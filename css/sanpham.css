@@ -1,0 +1,255 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+header{
+    z-index: 16;
+    position: fixed;
+    width: 100%;
+    height:9vh;
+    display: flex;
+    background-image: url(/images/Trang/bgbanner2.jpg);
+    background-size: cover;
+}
+header img{
+    float:left;
+    height: 30px;
+    margin: 20px 400px 20px 20px;
+}
+.menu{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+}
+.menu li a{
+    font-size: 20px;
+    width:150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px;
+    padding:12px 0;
+    color:#fff;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.menu li span{
+    width:100%;
+    height:100%;
+    position: absolute;
+    border-radius: 20px;
+    top:0;
+    left:0;
+    z-index:-1;
+    cursor:pointer;
+    transition: 1s ;
+    opacity: 0;
+    background: linear-gradient(to bottom, rgba(245, 71, 71, 0.477), rgba(105, 92, 252, 0.499));
+}
+.menu li:nth-child(6) a{
+    width:50px;
+}
+.menu li:nth-child(6):hover{
+    scale: 1.2;
+}
+.menu li:nth-child(5){
+background-color: #fff;
+width: 200px;
+border-radius: 3px
+}
+.menu li:nth-child(5) a{
+    display:flex;
+}
+.menu li:nth-child(5) a input{
+    float:left;
+    border: none;
+}
+.menu li:nth-child(5) a i{
+    float:right;
+    padding:3px;
+    color: cyan;
+    cursor: pointer;
+}
+
+.menu li:nth-child(2) span{
+    opacity: 1;
+}
+.menu li:hover span{
+    animation: vip 3s linear infinite;
+    opacity: 1;
+}
+@keyframes vip{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.Title{
+    text-align: center;
+    margin:30px;
+    font-size: 40px;
+}
+.chuyenmuc{
+    width:80vw;
+    height:40vh;
+    display:flex;
+    margin:0 auto;
+    text-decoration: none;
+}
+.chuyenmuc a{
+    width:10vw;
+    margin:0 auto;
+    transition: 0.5s;
+}
+.chuyenmuc a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    scale: 1.2;
+}
+.chuyenmuc a img{
+    width:10vw;
+}
+.chuyenmuc a h4{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.muc{
+    display: flex;
+    width:90vw;
+    margin: 0 auto 40px;
+}
+.muc h2{
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;   
+    width: 20vw;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+}
+.muc hr{
+    width:70vw;
+    border: #dec2f9 solid 2px;
+    margin: auto;
+}
+.sanpham{
+    width:90vw;
+    height:45vh;
+    margin: 0 auto;
+    display:flex;
+    text-decoration: none;
+}
+.sanpham a{
+    width:15vw;
+    margin:0 0.3vw;
+    transition: 0.5s;
+}
+.sanpham a img{
+    width:14vw;
+    height:25vh;
+    margin: 10px auto;
+}
+.sanpham a p{
+    width:9vw;
+    margin: 10px auto 0;
+    color: #000000;
+}
+.sanpham a h4{
+    width:9vw;
+    line-height: 25px;
+    margin: 10px auto 0;
+    padding:0 5px;
+    color: #ffffff;
+    background-color:#000000;
+    font-weight:bold;
+    
+}
+.sanpham a:hover{
+    border:#000000 2px  ;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.more{
+    width: 100vw;
+}
+.more p{
+    width: 100px;
+    border: rebeccapurple solid 1px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+    margin: 10px auto 0;
+    top:0;
+    left:0;
+    z-index:-1;
+    cursor:pointer;
+    transition: 1s ;
+    font-weight: bold;
+}
+.more p:hover{
+    animation: vip 3s linear infinite;
+    background: linear-gradient(to bottom, rgba(245, 71, 71, 0.477), rgba(105, 92, 252, 0.499));
+}
+footer{
+    background-image: url(/images/Trang/bgbanner.jpg);
+    background-size: cover;
+    color:#fff
+}
+footer div{
+    display: flex;
+    width:90%;
+    margin: 0 auto;
+    padding: 30px;
+}
+footer div ul{
+    list-style: none;
+    margin: 0 10px;
+}
+footer div img{
+    height: 60px;
+    margin-right:60px;
+    margin-top: 20px;
+}
+.title-footer{
+    font-weight: bold;
+    font-size: 20px;
+}
+footer ul li{
+    margin: 13px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #f62955;
+    transition: 0.5s;
+}
+footer ul li a:hover{
+    text-decoration: none;
+    color: #1bb5f7;
+}
+footer .last{
+    width: 100%;
+}
+footer .last p{
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+#top-up {
+    font-size: 4em;
+    cursor: pointer;
+    position: fixed;
+    z-index: 10;
+    color:#dec2f9;
+    bottom: 0px;
+    left:1400px;
+    display: none;
+    transition: 0.5s;
+    }
+    #top-up:hover {
+    color: rebeccapurple;
+    }
